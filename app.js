@@ -6,10 +6,12 @@ const path = require("path");
 
 const app = express();
 
+app.set("view engine", "ejs");
 app.use(bodyPasrser.urlencoded());
+app.use(express.static("public"));
 
 app.use("/", (req, res) => {
-    res.send("hello world");
+    res.render("index", {recipe: null, error: null});
 })
 
 app.listen(3000);
