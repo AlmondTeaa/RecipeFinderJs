@@ -22,18 +22,22 @@ body {
         opacity: 1
 }
 
-body h1,p{
+div.titleContainer {
     padding-left: 3vw;
     padding-right: 3vw;
     background-color: white;
-    z-index: 1;
+    border-radius: 2rem;
 }
 
 form {
+    margin-top: 5vh;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
     background-color: white;
     padding-bottom: 2vh;
-    padding-left: 3vw;
-    padding-right: 3vw;
+    padding-top: 2vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-radius: 2rem;
 }
 form input {
     width: 25vw;
