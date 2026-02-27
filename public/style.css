@@ -1,0 +1,53 @@
+* {
+    box-sizing: inherit;
+    padding: 0%;
+    margin: 0%;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 3rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: radial-gradient(circle, transparent 25%, #ffffff  26%),linear-gradient(45deg, transparent 46%, #716f9b 47%, #716f9b 52%, transparent 53%), linear-gradient(135deg, transparent 46%, #716f9b 47%, #716f9b 52%, transparent 53%);
+        background-size: 3em 3em;
+        background-color: #ffffff;
+        opacity: 1
+}
+
+body h1,p{
+    padding-left: 3vw;
+    padding-right: 3vw;
+    background-color: white;
+    z-index: 1;
+}
+
+form {
+    background-color: white;
+    padding-bottom: 2vh;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+form input {
+    width: 25vw;
+    height: 3vh;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgb(184, 226, 226);
+}
+form button {
+    width: 7vw;
+    height: 3vh;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #9dc9c1;
+}
+

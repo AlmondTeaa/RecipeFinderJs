@@ -6,12 +6,14 @@ const path = require("path");
 
 const app = express();
 
+const indexRouter = require(path.join(__dirname, "routes", "index"));
+const recipeRouter = require(path.join(__dirname, "routes", "recipe"));
+
 app.set("view engine", "ejs");
 app.use(bodyPasrser.urlencoded());
 app.use(express.static("public"));
 
-app.use("/", (req, res) => {
-    res.render("index", {recipe: null, error: null});
-})
+app.use(indexRouter);
+app.use(recipeRouter);
 
 app.listen(3000);
